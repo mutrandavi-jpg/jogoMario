@@ -77,7 +77,7 @@ Em seguida, acesse no navegador o endereço exibido no terminal (geralmente `htt
 | Alex Galdino    | 01813252  | Desenvolvedor |
 | Davi Mutran     | 01809878  | Scrum Master  |
 | Willams Matheus | 01817019  | Testador      |
-| Alan Vinicius   |  01866110 | Desenvolvedor |
+| Alan Vinicius   |  01866110 | Documentador  |
 | João Lucas      | 01808112  | Testador      |
 
 ## Licença
