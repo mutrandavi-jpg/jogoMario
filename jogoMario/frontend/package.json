@@ -1,0 +1,12 @@
+{
+  "name": "jogo-mario-frontend",
+  "version": "1.0.0",
+  "description": "Front-End do Jogo Mario",
+  "scripts": {
+    "dev": "http-server . -p 3000 -o"
+  },
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  },
+  "license": "MIT"
+}

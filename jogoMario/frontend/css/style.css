@@ -1,0 +1,140 @@
+* {
+    margin:  0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.game-board {
+   width: 80%;
+   height: 500px;
+   border: 10px solid rgb(35, 160, 35);
+   margin: 0 auto;
+   position: relative;
+   overflow: hidden;
+   background: linear-gradient(#87CEEB, #E0F6FF); 
+}
+
+.score {
+    position: absolute;
+    top: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 5;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 44px;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 2px 2px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 6px 24px;
+    border: 4px solid red;
+    border-radius: 10px;
+}
+
+.bowser {
+    position: absolute;
+    bottom: 0;
+    width: 150px;
+    right: -80px;
+    animation: bowser-animation 1.5s infinite linear;
+
+}
+
+.mario {
+    width: 180px;
+    position: absolute;
+    bottom: 0;
+}
+
+.jump {
+    animation: jump 500ms ease-out;
+
+}
+
+.clouds {
+    position: absolute;
+    width: 550px;
+    animation: clouds-animation 20s infinite linear;
+}
+
+.game-over-screen {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    background: rgba(0, 0, 0, 0.85);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+}
+
+.game-over-screen.show {
+    display: flex;
+}
+
+.game-over-screen img {
+    width: 40%;
+    max-height: 75%;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+}
+
+.game-over-screen h1 {
+    font-size: 42px;
+    color: #ff3b3b;
+    letter-spacing: 4px;
+}
+
+.game-over-screen p {
+    margin-top: 10px;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+@keyframes bowser-animation {
+    form{
+        right: 0;
+    }
+
+    to {
+        right: 100%;
+    }
+}
+
+@keyframes jump {
+    0% {
+        bottom: 0;
+    }
+
+    40% {
+        bottom: 180px;
+    }
+
+    60% {
+        bottom: 180px;
+    }
+
+    100% {
+        bottom: 0;
+    }
+
+}
+
+@keyframes clouds-animation {
+    from {
+        right: -500px;
+    }
+
+    to {
+        right: 100%;
+    }
+    
+}
